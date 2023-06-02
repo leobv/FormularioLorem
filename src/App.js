@@ -8,10 +8,16 @@ import Contacto from './components/Contacto';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Formulario />
-      <Informacion />
-      <Contacto />
+      <div className='Header'>
+        <Header />
+      </div>
+      <div className="content">
+        <Informacion />
+        <Formulario />
+      </div>
+      <div className='Contacto'>
+        <Contacto />
+      </div>
     </div>
   );
 }
