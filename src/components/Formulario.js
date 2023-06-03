@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './FormularioStyle.css';
 
 const Formulario = () => {
   const [campo1, setCampo1] = useState('');
@@ -16,23 +17,25 @@ const Formulario = () => {
   };
 
   return (
-    <div className="formulario">
-    <h2>Formulario de inscripcion</h2>
-      <form onSubmit={handleSubmit}>
-      <h5>Nombre</h5>
-      <input type="text" value={campo1} onChange={(e) => setCampo1(e.target.value)} />
-      <h5>Apellido</h5>
-      <input type="text" value={campo2} onChange={(e) => setCampo2(e.target.value)} />
-      <h5>Correo electronico del trabajo</h5>
-      <input type="text" value={campo3} onChange={(e) => setCampo3(e.target.value)} />
-      <h5>Pais</h5>
-      <input type="text" value={campo4} onChange={(e) => setCampo4(e.target.value)} />
-      <h5>Numero de telefono</h5>
-      <input type="text" value={campo5} onChange={(e) => setCampo5(e.target.value)} />
-      <h5>Puesto de trabajo</h5>
-      <input type="text" value={campo6} onChange={(e) => setCampo6(e.target.value)} />
-      <button type="submit">Inscribite</button>
-    </form>
+    <div className="Formulario">
+        <h2>!Inscribite y reserva tu lugar ahora!</h2>
+          <form onSubmit={handleSubmit}>
+            <div className="Input">
+              <h5>Nombre</h5>
+                <input type="text" value={campo1} onChange={(e) => setCampo1(e.target.value)} />
+              <h5>Apellido</h5>
+                <input type="text" value={campo2} onChange={(e) => setCampo2(e.target.value)} />
+              <h5>Correo electrónico del trabajo</h5>
+                <input type="text" value={campo3} onChange={(e) => setCampo3(e.target.value)} />
+              <h5>Pais</h5>
+                <input type="text" value={campo4} onChange={(e) => setCampo4(e.target.value)} />
+              <h5>Número de teléfono</h5>
+                <input type="text" value={campo5} onChange={(e) => setCampo5(e.target.value)} />
+              <h5>Puesto de trabajo</h5>
+                <input type="text" value={campo6} onChange={(e) => setCampo6(e.target.value)} />
+            </div>
+          <button className="Button" type="submit">Inscribete</button>
+        </form>
     </div>
   );
 };

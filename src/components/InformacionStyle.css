@@ -1,0 +1,19 @@
+.Informacion {
+    margin-left: 20px;
+    font-family: ProximaNova-Regular;
+    font-size: 16px;
+    color: #405457;
+    letter-spacing: 0;
+    line-height: 28px;
+    width: 50%;
+  }
+  
+  .Informacion h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .Informacion p {
+    margin-bottom: 10px;
+    text-align: start;
+  }

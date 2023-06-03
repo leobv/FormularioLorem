@@ -15,11 +15,8 @@ function App() {
         <Informacion />
         <Formulario />
       </div>
-      <div className='Contacto'>
         <Contacto />
-      </div>
     </div>
   );
 }
-
 export default App;
