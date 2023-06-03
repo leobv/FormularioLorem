@@ -18,22 +18,32 @@ const Formulario = () => {
 
   return (
     <div className="Formulario">
-        <h2>!Inscribite y reserva tu lugar ahora!</h2>
-          <form onSubmit={handleSubmit}>
-            <div className="Input">
-              <h5>Nombre</h5>
+          <form className="Input" onSubmit={handleSubmit}>
+                <h2>!Inscribite y reserva tu lugar ahora!</h2>
+              <div className='campo'>
+                <h5>Nombre</h5>
                 <input type="text" value={campo1} onChange={(e) => setCampo1(e.target.value)} />
-              <h5>Apellido</h5>
+              </div>
+              <div className='campo'>
+                <h5>Apellido</h5>
                 <input type="text" value={campo2} onChange={(e) => setCampo2(e.target.value)} />
-              <h5>Correo electrónico del trabajo</h5>
+              </div>
+              <div className='campo'>
+                <h5>Correo electrónico del trabajo</h5>
                 <input type="text" value={campo3} onChange={(e) => setCampo3(e.target.value)} />
-              <h5>Pais</h5>
+              </div>
+              <div className='campo'>
+                <h5>Pais</h5>
                 <input type="text" value={campo4} onChange={(e) => setCampo4(e.target.value)} />
-              <h5>Número de teléfono</h5>
+              </div>
+              <div className='campo'>
+                <h5>Número de teléfono</h5>
                 <input type="text" value={campo5} onChange={(e) => setCampo5(e.target.value)} />
-              <h5>Puesto de trabajo</h5>
+              </div>
+              <div className='campo'>
+                <h5>Puesto de trabajo</h5>
                 <input type="text" value={campo6} onChange={(e) => setCampo6(e.target.value)} />
-            </div>
+              </div>
           <button className="Button" type="submit">Inscribete</button>
         </form>
     </div>
