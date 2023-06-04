@@ -13,8 +13,80 @@
   height: 100%;
 }
 
+.Contacto-titulo {
+  font-family: ProximaNova-Regular;
+  font-size: 16px;
+  color: #405457;
+  letter-spacing: 0;
+  line-height: 28px;
+  width: 50%;
+}
+
 .Contacto-iconos {
+  color: #424242;
   margin-right: 10px;
   border-radius: 50%;
-  width: 50px;
+  width: 50p
+}
+
+/* Estilos para pantallas pequeñas (hasta 767px de ancho) */
+@media (max-width: 767px) {
+  .Contacto {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .Contacto-titulo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .Contacto-iconos {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Estilos para pantallas medianas (entre 768px y 991px de ancho) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .Contacto {
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .Contacto-titulo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .Contacto-iconos {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Estilos para pantallas grandes (a partir de 992px de ancho) */
+@media (min-width: 992px) {
+  .Contacto {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .Contacto-titulo {
+    width: 50%;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .Contacto-iconos {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
 }

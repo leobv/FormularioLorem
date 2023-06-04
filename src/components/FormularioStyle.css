@@ -1,3 +1,4 @@
+/* Estilos generales del formulario */
 .Formulario {
   display: flex;
   flex-flow: column wrap;
@@ -5,24 +6,18 @@
   height: 100%;
   width: 100%;
   padding-left: 50px;
-  margin-left: 100px;
 }
 
-.Input { 
+/* Estilos para los campos de entrada */
+.Input {
   background: #F8F9F9;
   width: 100%;
   height: 100%;
-}
-.campo {
-  display: flex;
-  flex-flow: column wrap;
-  margin-bottom: 0px;
-  font-family: SharpSansNo1-Semibold;
-  font-size: 20px;
-  align-items: flex-start;
-  padding-bottom: 0px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
+/* Estilos para los títulos de los campos */
 .Input h2 {
   font-family: SharpSansNo1-Semibold;
   font-size: 20px;
@@ -31,16 +26,15 @@
   line-height: 29px;
 }
 
-.campo input {
+/* Estilos para el campo de país */
+.pais {
   width: 90%;
-  height: 50px;
-  background: #FFFFFF;
-  border: 1px solid #68737D;
-  opacity: 100%;
-  font-family: SharpSansNo1-Semibold;
-  font-size: 30px;
+  height: 90%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
+/* Estilos para el botón */
 .Button {
   font-family: SharpSansNo1-Semibold;
   font-size: 19px;
@@ -51,4 +45,70 @@
   height: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/* Estilos para pantallas pequeñas (hasta 767px de ancho) */
+@media (max-width: 767px) {
+  .Formulario {
+    padding-left: 10px;
+  }
+
+  .Input h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .campo input {
+    font-size: 20px;
+    height: 40px;
+  }
+
+  .Button {
+    font-size: 16px;
+    height: 40px;
+  }
+}
+
+/* Estilos para pantallas medianas (entre 768px y 991px de ancho) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .Formulario {
+    padding-left: 20px;
+  }
+
+  .Input h2 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .campo input {
+    font-size: 24px;
+    height: 50px;
+  }
+
+  .Button {
+    font-size: 18px;
+    height: 50px;
+  }
+}
+
+/* Estilos para pantallas grandes (a partir de 992px de ancho) */
+@media (min-width: 992px) {
+  .Formulario {
+    padding-left: 50px;
+  }
+
+  .Input h2 {
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .campo input {
+    font-size: 30px;
+    height: 60px;
+  }
+
+  .Button {
+    font-size: 19px;
+    height: 60px;
+  }
 }

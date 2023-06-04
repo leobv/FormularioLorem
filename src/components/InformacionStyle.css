@@ -1,17 +1,75 @@
+/* Estilos generales de la sección de información */
 .Informacion {
+  margin-left: 20px;
+  font-family: ProximaNova-Regular;
+  font-size: 16px;
+  color: #405457;
+  letter-spacing: 0;
+  line-height: 28px;
+  width: 50%;
+}
+
+/* Estilos para el título de la sección de información */
+.Informacion h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Estilos para el texto de especialistas */
+.especialistas {
+  font-family: ProximaNova-Regular;
+  font-size: 16px;
+  color: #405457;
+  width: fit-content;
+}
+
+/* Estilos para pantallas pequeñas (hasta 767px de ancho) */
+@media (max-width: 767px) {
+  .Informacion {
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .Informacion h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .especialistas {
+    font-size: 14px;
+  }
+}
+
+/* Estilos para pantallas medianas (entre 768px y 991px de ancho) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .Informacion {
     margin-left: 20px;
-    font-family: ProximaNova-Regular;
+    width: 70%;
+  }
+
+  .Informacion h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .especialistas {
     font-size: 16px;
-    color: #405457;
-    letter-spacing: 0;
-    line-height: 28px;
+  }
+}
+
+/* Estilos para pantallas grandes (a partir de 992px de ancho) */
+@media (min-width: 992px) {
+  .Informacion {
+    margin-left: 20px;
     width: 50%;
   }
-  
+
   .Informacion h2 {
-    margin-bottom: 10px;
-    text-align: center;
+    font-size: 36px;
+    line-height: 54px;
   }
-  img {
-    
+
+  .especialistas {
+    font-size: 16px;
   }
+}

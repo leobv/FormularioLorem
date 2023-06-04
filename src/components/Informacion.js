@@ -20,13 +20,13 @@ function Informacion() {
               Escucha de primera mano la voz de nuestros especialistas:
               <br/>
               <br/>
-              <img src={presidente} alt="Presidente" />
+              <img className='especialistas' src={presidente} alt="Presidente" />
               <br />
-              <img src={customer} alt="Customer" />
+              <img className='especialistas' src={customer} alt="Customer" />
               <br />
-              <img src={consultant} alt="Consultant" />
+              <img className='especialistas' src={consultant} alt="Consultant" />
               <br />
-              <img src={gerente} alt="Gerente" />
+              <img className='especialistas' src={gerente} alt="Gerente" />
               <br />
               <br />
               Participa e inspírate para innovar y mejorar la interacción entre clientes y marcas con historias de éxito de empresas del ámbito financiero en América Latina.

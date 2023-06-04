@@ -8,42 +8,62 @@
 }
 
 /* Estilos para el encabezado */
-
-
 .content {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  max-width: 100%;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-}
-
-/* Estilos para el formulario */
-
-
-/* Estilos para la sección de información */
-
-
-/* Estilos para la sección de contacto */
-.Contacto {
-  margin-bottom: 20px;
-}
-
-.Contacto h2 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.Contacto input,
-.Contacto textarea {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
+}
+.Informacion {
+  flex: 2;
 }
 
-.Contacto textarea {
-  resize: vertical;
+.Formulario {
+  flex: 1;
+}
+
+
+
+@media (max-width: 767px) {
+  /* Estilos para pantallas pequeñas (hasta 767px de ancho) */
+  .content {
+    flex-direction: column;
+  }
+  .Informacion {
+    flex: 1;
+  }
+  .Formulario {
+    flex: 1;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Estilos para pantallas medianas (entre 768px y 991px de ancho) */
+  .content {
+    flex-direction: column;
+  }
+  .Informacion {
+    flex: 1;
+  }
+  .Formulario {
+    flex: 1;
+  }
+
+}
+
+@media (min-width: 992px) {
+  /* Estilos para pantallas grandes (a partir de 992px de ancho) */
+  .content {
+    flex-direction: row;
+  }
+  .Informacion {
+    flex: 2;
+  }
+  .Formulario {
+    flex: 1;
+  }
+  
 }

@@ -1,21 +1,13 @@
+/* Estilos generales del encabezado */
 .Header {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   background-image: url(../img/Header.svg);
   width: 100%;
-  }
-
-.Header h4 {
-  font-family: SharpSansNo1-Bold;
-  background-color: chocolate;
-  color: #FFFFFF;
-  letter-spacing: 0.93px;
-  text-align: center;
-  line-height: 15px;
-  padding: 10px;
 }
 
+/* Estilos para el título principal */
 .Header h2 {
   font-family: SharpSansNo1-Bold;
   font-size: 50px;
@@ -26,6 +18,7 @@
   margin: 0%;
 }
 
+/* Estilos para el subtítulo */
 .Header h3 {
   font-family: SharpSansNo1-Regular;
   font-size: 20px;
@@ -34,4 +27,62 @@
   text-align: center;
   line-height: 30px;
   margin-bottom: 3%;
+}
+
+/* Estilos para pantallas pequeñas (hasta 767px de ancho) */
+@media (max-width: 767px) {
+  
+  .Header h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .Header h3 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 5%;
+  }
+
+  .Header {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Estilos para pantallas medianas (entre 768px y 991px de ancho) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .Header h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .Header h3 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 4%;
+  }
+
+  .Header {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Estilos para pantallas grandes (a partir de 992px de ancho) */
+@media (min-width: 992px) {
+  .Header h2 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .Header h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 3%;
+  }
+
+  .Header {
+    background-size: cover;
+    background-position: center;
+  }
 }
