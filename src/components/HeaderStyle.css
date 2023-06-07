@@ -3,6 +3,9 @@
   font-family: "SharpSansNo1-Bold";
   src: url("../fonts/SharpSansNo1-Bold.woff2") format("woff2"),
        url("../fonts/SharpSansNo1-Bold.woff") format("woff");
+}
+
+@font-face {
   font-family: "ProximaNova-alt-bold";
   src: url("../fonts/proxima_nova_alt_bold-webfont.woff2") format("woff2"),
        url("../fonts/proxima_nova_alt_bold-webfont.woff") format("woff");
@@ -51,17 +54,18 @@
   background-color: chocolate;
   letter-spacing: 0.93px;
   text-align: center;
-  margin: 0;
+  margin-top: 50px;
 }
 
 /* Estilos para pantallas pequeñas (hasta 767px de ancho) */
 @media (max-width: 767px) {
-  .Header {
+  .Header h1 {
+    font-size: 30px;
     padding: 20px;
   }
   
   .Header h2 {
-    font-size: 30px;
+    font-size: 20px;
     line-height: 40px;
   }
 
@@ -74,8 +78,13 @@
 
 /* Estilos para pantallas medianas (entre 768px y 991px de ancho) */
 @media (min-width: 768px) and (max-width: 991px) {
-  .Header h2 {
+  .Header h1 {
     font-size: 40px;
+    padding: 20px;
+  }
+  
+  .Header h2 {
+    font-size: 30px;
     line-height: 50px;
   }
 
@@ -88,8 +97,13 @@
 
 /* Estilos para pantallas grandes (a partir de 992px de ancho) */
 @media (min-width: 992px) {
-  .Header h2 {
+  .Header h1 {
     font-size: 50px;
+    padding: 40px;
+  }
+  
+  .Header h2 {
+    font-size: 40px;
     line-height: 60px;
   }
 
@@ -99,4 +113,5 @@
     margin-bottom: 10px;
   }
 }
+
 

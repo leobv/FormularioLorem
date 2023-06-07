@@ -1,3 +1,9 @@
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url('../fonts/SharpSansNo1-Bold.woff');
+  src: url('../fonts/SharpSansNo1-Bold.woff2');
+}
+
 .Contacto {
   display: flex;
   flex-flow: row wrap;
@@ -14,10 +20,7 @@
 }
 
 .Contacto-titulo {
-  @font-face {
-    font-family: ProximaNova-Regular;
-    src: url('../fonts/SharpSansNo1-Bold.woff');
-  }
+  font-family: SharpSansNo1-Bold;
   font-size: 16px;
   color: #405457;
   letter-spacing: 0;
@@ -53,6 +56,7 @@
 /* Estilos para pantallas medianas (entre 768px y 991px de ancho) */
 @media (min-width: 768px) and (max-width: 991px) {
   .Contacto {
+    display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;

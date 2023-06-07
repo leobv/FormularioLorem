@@ -35,10 +35,7 @@
 
 /* Estilos para el texto de especialistas */
 .especialistas {
-  @font-face {
-    font-family: "SharpSans";
-    src: url("../fonts/SharpSansNo1Medium-Regular.woff");
-  }
+  font-family: proximanova-regular-webfont;
   font-size: 16px;
   color: #405457;
   width: fit-content;
