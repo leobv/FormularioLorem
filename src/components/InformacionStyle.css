@@ -1,12 +1,30 @@
 /* Estilos generales de la sección de información */
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: url("../fonts/proximanova-regular-webfont.woff");
+}
+
 .Informacion {
   margin-left: 20px;
-  font-family: ProximaNova-Regular;
-  font-size: 16px;
+  font-size: 24px;
   color: #405457;
   letter-spacing: 0;
   line-height: 28px;
   width: 50%;
+}
+
+/* Estilos para el logo */
+.Logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.Logo img {
+  max-width: 137px;
+  height: 24px;
 }
 
 /* Estilos para el título de la sección de información */
@@ -17,7 +35,10 @@
 
 /* Estilos para el texto de especialistas */
 .especialistas {
-  font-family: ProximaNova-Regular;
+  @font-face {
+    font-family: "SharpSans";
+    src: url("../fonts/SharpSansNo1Medium-Regular.woff");
+  }
   font-size: 16px;
   color: #405457;
   width: fit-content;
@@ -26,8 +47,22 @@
 /* Estilos para pantallas pequeñas (hasta 767px de ancho) */
 @media (max-width: 767px) {
   .Informacion {
-    margin-left: 10px;
+    margin-left: 40px;
     width: 100%;
+  }
+
+  .Logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0;
+  }
+
+  .Logo img {
+    max-width: 70px;
+    height: 10px;
   }
 
   .Informacion h2 {
@@ -45,6 +80,11 @@
   .Informacion {
     margin-left: 20px;
     width: 70%;
+  }
+
+  .Logos {
+    width: 50px;
+    height: 50px;
   }
 
   .Informacion h2 {

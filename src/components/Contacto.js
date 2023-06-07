@@ -9,12 +9,12 @@ function Contacto() {
           <h3>Desarrollado por: <a href="https://www.linkedin.com/in/lea-bevi/">Leandro Bevilacqua</a></h3>
         </div>
         <div className="Contacto-iconos">
-          <a href="https://www.twitter.com/"><img src="https://img.icons8.com/color/48/000000/twitter.png" alt="twitter"/></a>
-          <a href="https://www.facebook.com/"><img src="https://img.icons8.com/color/48/000000/facebook.png" alt="facebook"/></a>
-          <a href="https://www.linkedin.com/"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="linkedin"/></a>
-          <a href="https://www.youtube.com/"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="youtube"/></a>
-          <a href="https://www.instagram.com/"><img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="instagram"/></a>
-          <a href="https://www.snapchat.com/add/"><img src="https://img.icons8.com/color/48/000000/snapchat.png" alt="snapchat"/></a>
+          <a href="https://www.twitter.com/"><img src="https://img.icons8.com/color/33/000000/twitter.png" alt="twitter"/></a>
+          <a href="https://www.facebook.com/"><img src="https://img.icons8.com/color/33/000000/facebook.png" alt="facebook"/></a>
+          <a href="https://www.linkedin.com/"><img src="https://img.icons8.com/color/33/000000/linkedin.png" alt="linkedin"/></a>
+          <a href="https://www.youtube.com/"><img src="https://img.icons8.com/color/33/000000/youtube-play.png" alt="youtube"/></a>
+          <a href="https://www.instagram.com/"><img src="https://img.icons8.com/color/33/000000/instagram-new.png" alt="instagram"/></a>
+          <a href="https://www.snapchat.com/add/"><img src="https://img.icons8.com/color/33/000000/snapchat.png" alt="snapchat"/></a>
         </div>
       </div>
     );

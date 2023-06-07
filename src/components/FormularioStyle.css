@@ -1,4 +1,9 @@
 /* Estilos generales del formulario */
+@font-face {
+  font-family: "SharpSans";
+  src: url("../fonts/SharpSansNo1Medium-Regular.woff");
+}
+
 .Formulario {
   display: flex;
   flex-flow: column wrap;
@@ -19,11 +24,19 @@
 
 /* Estilos para los títulos de los campos */
 .Input h2 {
-  font-family: SharpSansNo1-Semibold;
+  font-family: "SharpSans";
   font-size: 20px;
   color: #02363D;
   text-align: center;
   line-height: 29px;
+}
+
+.Input h5 {
+  font-family: "SharpSans";
+  font-size: 16px;
+  color: #02363D;
+  text-align: flex-start;
+  line-height: 24px;
 }
 
 /* Estilos para el campo de país */
@@ -36,7 +49,7 @@
 
 /* Estilos para el botón */
 .Button {
-  font-family: SharpSansNo1-Semibold;
+  font-family: "SharpSans";
   font-size: 19px;
   color: #FFFFFF;
   background: #02363D;

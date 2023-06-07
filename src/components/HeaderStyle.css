@@ -1,36 +1,64 @@
 /* Estilos generales del encabezado */
+@font-face {
+  font-family: "SharpSansNo1-Bold";
+  src: url("../fonts/SharpSansNo1-Bold.woff2") format("woff2"),
+       url("../fonts/SharpSansNo1-Bold.woff") format("woff");
+  font-family: "ProximaNova-alt-bold";
+  src: url("../fonts/proxima_nova_alt_bold-webfont.woff2") format("woff2"),
+       url("../fonts/proxima_nova_alt_bold-webfont.woff") format("woff");
+}
+
 .Header {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   align-items: center;
   background-image: url(../img/Header.svg);
   width: 100%;
+  box-sizing: border-box;
 }
 
 /* Estilos para el título principal */
-.Header h2 {
-  font-family: SharpSansNo1-Bold;
-  font-size: 50px;
+.Header h1 {
+  font-family: "SharpSansNo1-Bold";
   color: #02363D;
-  letter-spacing: 0.93px;
   text-align: center;
-  line-height: 60px;
-  margin: 0%;
+  line-height: 52px;
+  margin: 0;
+}
+
+.Header h2 {
+  font-family: "ProximaNova-alt-bold";
+  color: #02363D;
+  text-align: center;
+  line-height: 30px;
+  margin: 0;
 }
 
 /* Estilos para el subtítulo */
 .Header h3 {
-  font-family: SharpSansNo1-Regular;
-  font-size: 20px;
-  color: #02363D;
-  letter-spacing: 0.93px;
+  font-family: "SharpSansNo1-Bold";
+  color: #00373E;
+  line-height: 15px;
   text-align: center;
   line-height: 30px;
-  margin-bottom: 3%;
+  margin-bottom: 10px;
+}
+
+.Header h4 {
+  font-family: "SharpSansNo1-Bold";
+  font-size: 13px;
+  color: #FFFFFF;
+  background-color: chocolate;
+  letter-spacing: 0.93px;
+  text-align: center;
+  margin: 0;
 }
 
 /* Estilos para pantallas pequeñas (hasta 767px de ancho) */
 @media (max-width: 767px) {
+  .Header {
+    padding: 20px;
+  }
   
   .Header h2 {
     font-size: 30px;
@@ -40,12 +68,7 @@
   .Header h3 {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 5%;
-  }
-
-  .Header {
-    background-size: cover;
-    background-position: center;
+    margin-bottom: 5px;
   }
 }
 
@@ -59,12 +82,7 @@
   .Header h3 {
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 4%;
-  }
-
-  .Header {
-    background-size: cover;
-    background-position: center;
+    margin-bottom: 8px;
   }
 }
 
@@ -78,11 +96,7 @@
   .Header h3 {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 3%;
-  }
-
-  .Header {
-    background-size: cover;
-    background-position: center;
+    margin-bottom: 10px;
   }
 }
+
